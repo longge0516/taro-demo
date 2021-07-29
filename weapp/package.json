@@ -1,0 +1,15 @@
+{
+  "name": "ctripweixin",
+  "version": "0.0.1",
+  "scripts": {
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "docdash": "^1.1.0",
+    "minami": "^1.2.3"
+  }
+}

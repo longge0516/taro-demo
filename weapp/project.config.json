@@ -1,0 +1,379 @@
+{
+  "description": "项目配置文件。",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "showES6CompileOption": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.8.3",
+  "appid": "wx0e6ed4f51db9d078",
+  "projectname": "WechatApp",
+  "scripts": {
+    "beforeCompile": "npm run compile",
+    "beforePreview": "npm run compile",
+    "beforeUpload": "npm run compile"
+  },
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "skeleton-config": {
+    "global": {
+      "loading": "shine",
+      "text": {
+        "color": "#EEEEEE"
+      },
+      "image": {
+        "shape": "",
+        "color": "#EFEFEF",
+        "shapeOpposite": []
+      },
+      "button": {
+        "color": "#EFEFEF",
+        "excludes": []
+      },
+      "pseudo": {
+        "color": "#EFEFEF",
+        "shape": "react",
+        "shapeOpposite": []
+      },
+      "excludes": [
+        "navbar",
+        ".slogan-container"
+      ],
+      "remove": [],
+      "empty": [],
+      "hide": [],
+      "grayBlock": [],
+      "showNative": false,
+      "backgroundColor": "transparent",
+      "mode": "fullscreen",
+      "templateName": "skeleton",
+      "cssUnit": "rpx",
+      "decimal": 4
+    },
+    "pages": {
+      "pages/bus/list/list": {
+        "mode": "auto",
+        "excludes": [
+          "nav-bar",
+          ".bus-listdate"
+        ],
+        "remove": [
+          ".tag-back-invert"
+        ]
+      },
+      "pages/bus/book/book": {
+        "mode": "auto"
+      },
+      "pages/bus/orderdetail/orderdetail": {
+        "mode": "auto"
+      }
+    }
+  },
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/bus/list/list",
+          "pathName": "pages/bus/list/list",
+          "query": "utmsource=ctripw_0909&fromCity=上海&toCity=南通&date=2019-08-25",
+          "scene": 1011
+        },
+        {
+          "name": "中间页面",
+          "pathName": "pages/bus/router/index",
+          "query": "q=https%3a%2f%2fm.ctrip.com%2fwebapp%2fbus%2fappbus%2fmcoupon%3fid%3d1126287",
+          "scene": 1036,
+          "referrerInfo": {
+            "appId": "wxa3ca64b5aa2a79a7"
+          }
+        },
+        {
+          "id": -1,
+          "name": "优惠券",
+          "pathName": "pages/market/bargain/list",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "关键字",
+          "pathName": "pages/ticket/list/list",
+          "query": "type=k&keyword=温泉"
+        },
+        {
+          "id": 4,
+          "name": "迪士尼",
+          "pathName": "pages/ticket/detail/index",
+          "query": "id=1412255&activityflag=1&allianceid=263528&sid=1295873"
+        },
+        {
+          "id": 5,
+          "name": "车站列表",
+          "pathName": "pages/bus/station/list",
+          "query": "utmsource=ctripwx_0000"
+        },
+        {
+          "id": 6,
+          "name": "中转",
+          "pathName": "pages/bus/router/index",
+          "query": "q=https%3a%2f%2fm.ctrip.com%2fwebapp%2fbus%2fappbus%2findex%3futmsource%3dctripwx_qcxcx_0901",
+          "scene": "1001"
+        },
+        {
+          "id": 7,
+          "name": "pages/bus/share/shareIndex",
+          "pathName": "pages/bus/share/shareIndex",
+          "query": "activityId=1111&type=1001",
+          "scene": 1036,
+          "referrerInfo": {
+            "appId": "wxa3ca64b5aa2a79a7"
+          }
+        },
+        {
+          "id": 8,
+          "name": "首页间接跳转汽车票分享活动页面",
+          "pathName": "pages/bus/index/index",
+          "query": "utmSource=ctripwx_qcxcx_0909",
+          "scene": "1001"
+        },
+        {
+          "id": 9,
+          "name": "船票测试",
+          "pathName": "pages/home/homepage",
+          "query": "utmsource=quan_kkk&mFrom=珠海&mTo=外伶仃岛"
+        },
+        {
+          "id": 10,
+          "name": "app卡片",
+          "pathName": "pages/bus/index/index",
+          "query": "",
+          "scene": "1036",
+          "referrerInfo": {
+            "appId": ""
+          }
+        },
+        {
+          "id": 11,
+          "name": "订单详情",
+          "pathName": "pages/bus/orderdetail/orderdetail",
+          "query": "fromPage=booking&oid=10122787153",
+          "scene": 1001
+        },
+        {
+          "id": 12,
+          "name": "船票领券",
+          "pathName": "pages/ship/index/index",
+          "query": "pushStation=大连湾港"
+        },
+        {
+          "id": 13,
+          "name": "webView",
+          "pathName": "pages/bus/web/index",
+          "query": "url=http://www.baidu.com",
+          "scene": "1001"
+        },
+        {
+          "id": 14,
+          "name": "奖品列表",
+          "pathName": "pages/bus/share/ward",
+          "query": "utmSource=ctripwx_share_bus",
+          "scene": "1001"
+        },
+        {
+          "id": -1,
+          "name": "提现",
+          "pathName": "pages/bus/share/cash",
+          "query": "utmSource=ctripwx_share_bus",
+          "scene": "1001"
+        },
+        {
+          "id": 16,
+          "name": "到达站收集",
+          "pathName": "pages/bus/feed/station",
+          "query": "toCity=上海&fromCity=北京&fromDate=2018-03-05&oid=5391355774",
+          "scene": "1001"
+        },
+        {
+          "id": 17,
+          "name": "wc",
+          "pathName": "pages/hotel/market/cup/index/index",
+          "query": "",
+          "scene": "1001"
+        },
+        {
+          "id": 18,
+          "name": "web",
+          "pathName": "pages/train/webview/webview",
+          "query": "url=https%3A%2F%2Ft.ctrip.cn%2FGOeS4zU&url2=https%3A%2F%2Fm.ctrip.com"
+        },
+        {
+          "id": 19,
+          "name": "pages/bus/share/shareIndex",
+          "pathName": "pages/bus/share/shareIndex",
+          "query": "utmsource=ctripwx_0909&activityId=100&type=1001",
+          "scene": 1011
+        },
+        {
+          "id": 20,
+          "name": "首页",
+          "pathName": "pages/bus/index/index",
+          "query": "utmSource=ctripwx_share_bus&oid=6324471710&fromPage=booking",
+          "scene": "1001"
+        },
+        {
+          "id": 21,
+          "name": "船票列表",
+          "pathName": "pages/ship/list/list",
+          "query": "mFrom=大连&mTo=烟台&allianceid=849592&sid=1415731",
+          "scene": "1011"
+        },
+        {
+          "id": 22,
+          "name": "yaoshen",
+          "pathName": "pages/market/yaoshen/kv",
+          "query": ""
+        },
+        {
+          "id": 23,
+          "name": "HOMEPAGE",
+          "pathName": "pages/home/homepage",
+          "query": ""
+        },
+        {
+          "id": 24,
+          "name": "首页ABTestA版",
+          "pathName": "pages/home/homepage",
+          "query": "customAB=A"
+        },
+        {
+          "id": 25,
+          "name": "首页ABTestB版",
+          "pathName": "pages/home/homepage",
+          "query": "customAB=B"
+        },
+        {
+          "id": -1,
+          "name": "testconfig",
+          "pathName": "pages/home/testconfig",
+          "query": ""
+        },
+        {
+          "id": 27,
+          "name": "est",
+          "pathName": "cwx/component/cwebview/cwebview?data={\"needLogin\":true,\"url\":\"https%3A%2F%2Fm.ctrip.com%2Ftangram%2FMTY3%3FisHideNavBar%3DYES%26ctm_ref%3Dvactang_page_167\"}",
+          "query": ""
+        },
+        {
+          "id": 28,
+          "name": "liulangindex",
+          "pathName": "pages/jokes/liulang/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 29,
+          "name": "testtour",
+          "pathName": "pages/tour/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 30,
+          "name": "hotel_list",
+          "pathName": "pages/hotel/list/index",
+          "query": "cityid=1",
+          "scene": null
+        },
+        {
+          "id": 31,
+          "name": "hotel_detail_with_date_436187",
+          "pathName": "pages/hotel/detail/index",
+          "query": "id=436187&allianceid=771524&sid=1318320&inday=2018-01-11&outday=2018-01-12",
+          "scene": null
+        },
+        {
+          "id": 32,
+          "name": "hotel_扫码中间页",
+          "pathName": "pages/hotel/transitionpage/index",
+          "query": "hotelid=374776&topage=todetail",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/bus/wallet/index",
+          "pathName": "pages/bus/wallet/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 34,
+          "name": "cwx/component/cwebview/cwebview",
+          "pathName": "cwx/component/cwebview/cwebview",
+          "query": "data={\"url\":\"https%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyueche%2Fyueche%2Fgroundbook%3Fisditui%3D2%26from%3D%E4%B8%8A%E6%B5%B7%26to%3D%E6%97%A0%E9%94%A1%2C%E5%AE%9C%E5%85%B4%2C%E5%90%B4%E6%B1%9F%2C%E5%BC%A0%E5%AE%B6%E6%B8%AF%2C%E5%B8%B8%E7%86%9F%2C%E5%A4%AA%E4%BB%93%2C%E8%8B%8F%E5%B7%9E%2C%E6%98%86%E5%B1%B1%26fromstation%3D%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA%26fromPage%3Dkuaiche%26utmsource%3Dctripwx_ztc617%26allianceid%3D1084854%26sid%3D1084854%26website%3Dwww.busebook.com_hzzqqc\",\"needLogin\":true}",
+          "scene": null
+        },
+        {
+          "id": 35,
+          "name": "pages/hotel/list/index",
+          "pathName": "pages/hotel/list/index",
+          "query": "cityid=2&cityname=上海&biz=1",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ticket/list/list",
+          "pathName": "pages/ticket/list/list",
+          "query": "type=dt&districtid=2&districtname=上海",
+          "scene": null
+        },
+        {
+          "id": 37,
+          "name": "pages/cranking/theme/theme",
+          "pathName": "pages/cranking/theme/theme",
+          "query": "type=sight&districtId=0&themeId=100001372904",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

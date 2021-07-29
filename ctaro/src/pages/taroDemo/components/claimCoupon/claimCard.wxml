@@ -1,0 +1,66 @@
+<!-- components/claimDetail.wxml -->
+<view class="card-container" hover-class="none" hover-stop-propagation="false">
+    <view class="card-main" catch:tap="openDetail" data-ubt-key="{{dataUbtKey_more}}"  hover-class="none" hover-stop-propagation="false">
+        <view class="card-main-left" hover-class="none" hover-stop-propagation="false">
+            <view wx:if="{{!!couponItem.deductionInfoShown && couponItem.deductionInfoShown.fullDeduction}}" class="deduction_fullamount" hover-class="none" hover-stop-propagation="false">
+                {{couponItem.deductionInfoShown.desc}}
+            </view>
+            <view wx:elif="{{!!couponItem.deductionInfoShown}}" class="info_deduction_view_flexBox" hover-class="none" hover-stop-propagation="false">
+                <view class="info_deduction_view_flexBox_part1" hover-class="none" hover-stop-propagation="false">
+                    {{couponItem.deductionInfoShown.desc}}
+                </view>
+                <view class="info_deduction_view_flexBox_part2" hover-class="none" hover-stop-propagation="false">
+                    {{couponItem.deductionInfoShown.amount}}
+                    <text class="info_deduction_view_flexBox_part_unit" selectable="false" space="false" decode="false">
+                        {{couponItem.deductionInfoShown.discountUnit}}
+                    </text>
+                </view>
+            </view>
+        </view>
+        <view class="card-main-right" hover-class="none" hover-stop-propagation="false">
+            <view class="card-main-right-top" hover-class="none" hover-stop-propagation="false">
+                <view wx:if="{{!!couponItem.couponName}}" class="card-main-right-title" hover-class="none" hover-stop-propagation="false">
+                    {{couponItem.couponName}}
+                </view>
+                <view wx:if="{{!!couponItem.shortRemark}}" class="card-main-right-desc" hover-class="none" hover-stop-propagation="false">
+                    {{couponItem.shortRemark}}
+                </view>
+                <view wx:if="{{!!couponItem.useDateShown}}" class="card-main-right-date" hover-class="none" hover-stop-propagation="false">
+                    {{couponItem.useDateShown}}
+                </view>
+            </view>
+            <view class="card-main-right-bottom" hover-class="none" hover-stop-propagation="false">
+                使用说明
+                <text class="{{ isOpen? 'icon-arrow-up': 'icon-arrow-down'}}  desc-arrow" hover-class="none" hover-stop-propagation="false"></text>
+            </view>
+            <view class="hasAlrealyClaimPic {{couponItem.showImg?'show':'hidden'}}" hover-class="none" hover-stop-propagation="false">
+                <image animation="{{animationData}}" class="claimPic claimPicAnimationWithOutTransition" src="https://dimg04.c-ctrip.com/images/0AS3q1200087hg3qwC682.png" mode="scaleToFill" lazy-load="false"></image>
+            </view>
+            <view wx:if="{{!couponItem.showImg}}" catch:tap="claimCoupon" data-ubt-key="{{dataUbtKey_claim}}" class="buttonText {{couponItem.disableButton?'disablebutton':''}} {{ couponItem.activityStatus == 1 && couponItem.promotionStatus == 1?'warmButton':'' }}" hover-class="none" hover-stop-propagation="false">
+                {{couponItem.buttonText}}
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{isOpen}}" class="card-detail" hover-class="none" hover-stop-propagation="false">
+        <view wx:if="{{couponItem.deductionInfoShown}}" class="deductionList" hover-class="none" hover-stop-propagation="false">
+            <template is="deductionListItem" wx:for="{{couponItem.deductionInfoShown.deductionList}}" wx:key="*this" data="{{item}}" />
+        </view>
+        <view wx:if="{{couponItem.detailRemarkShown}}" class="detail_remark_list" hover-class="none" hover-stop-propagation="false">
+            <template is="detail_remark_list_item" wx:for="{{couponItem.detailRemarkShown}}" wx:key="*this" data="{{item}}" />
+        </view>
+        <view wx:if="{{couponItem.couponType == 1&&couponItem.couponCode}}" class="detail_remark_code" hover-class="none" hover-stop-propagation="false">
+            优惠券码：{{couponItem.couponCode}}
+        </view>
+    </view>
+</view>
+<template name="deductionListItem">
+    <view class="deductionListItem" hover-class="none" hover-stop-propagation="false">
+        {{item}}
+    </view>
+</template>
+<template name="detail_remark_list_item">
+    <view class="detail_remark_list_item" hover-class="none" hover-stop-propagation="false">
+        <text class="circle-point" hover-class="none" hover-stop-propagation="false"></text>
+        {{item}}
+    </view>
+</template>
