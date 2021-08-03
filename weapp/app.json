@@ -7,11 +7,6 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#efefef"
   },
-  "subPackages": [
-    {
-      "root": "pages/taroDemo",
-      "pages": [ "index", "subPackages/foo/index", "subPackages/bar/index" ]
-    }
-  ],
+  "subPackages": [ { "root": "pages/taroDemo", "pages": [ "index" ] } ],
   "sitemapLocation": "sitemap.json"
 }

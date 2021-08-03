@@ -1,2 +1,0 @@
-<import src="../../../../taroBase/base.wxml"/>
-<template is="taro_tmpl" data="{{root:root}}" />
